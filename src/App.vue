@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import NavPage from '@/components/NavPage'
-import HeaderPage from '@/components/HeaderPage'
+import NavPage from '@/components/header-nav/NavPage'
+import HeaderPage from '@/components/header-nav/HeaderPage'
 
 export default {
   name: 'App',
@@ -21,7 +21,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
   color: #2c3e50;
   margin-top: 10px;
 }

@@ -1,16 +1,15 @@
 <template>
-  <div class="header">
-    <h3>{{ headerTitle }}</h3>
-    <hr />
+  <div class="customer">
+    <h3>{{ msg }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HeaderPage',
+  name: 'Customer',
   data () {
     return {
-      headerTitle: 'Welcome to Your Vue.js App'
+      msg: 'Customer component'
     }
   }
 }
@@ -18,8 +17,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.header {
-    text-align: left;
-    padding-left: 30px;
+h1, h2 {
+  font-weight: normal;
+}
+.customer h3 {
+  color: green;
+  text-align: center;
 }
 </style>

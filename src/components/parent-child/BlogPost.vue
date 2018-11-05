@@ -1,5 +1,5 @@
 <template>
-  <div class="blog-post">
+  <div class="blog-post-style">
     <p>Child Comp: {{ title }}</p>
     <span>FName: {{ author }} </span>
   </div>
@@ -8,6 +8,6 @@
 <script>
 export default {
   name: 'BlogPost',
-  props: ['title', 'author' ]
+  props: ['title', 'author']
 }
 </script>
