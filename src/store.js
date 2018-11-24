@@ -11,6 +11,13 @@ export const store = new Vuex.Store({
       {id: 2, name: 'Jonathan', registered: false},
       {id: 3, name: 'Mary', registered: false},
       {id: 4, name: 'Anthony', registered: false},
+    ],
+    products: [
+      {id: 0, text: 'Tomato'},
+      {id: 1, text: 'Cheese'},
+      {id: 2, text: 'Mushroom'}
+    ],
+    checkedoutProducts: [
     ]
   }
 })

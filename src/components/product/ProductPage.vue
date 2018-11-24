@@ -1,47 +1,26 @@
 <template>
   <div class="">
-    <div class="product">
-      <product-item
-        v-for="product in groceryList"
-        v-bind:product="product"
-        v-bind:key="product.id"
-        @add-to-cart="onBuyButtonClick">
-      </product-item>
-    </div>
-
-    <checkout-page>
-      <span>aqqaa</span>
-    </checkout-page>
+    <products>
+    </products>
+    <hr />
+    <br />
+    <checkout-container></checkout-container>
+    <hr />
+    <AdditionalProductsContainer></AdditionalProductsContainer>
   </div>
 </template>
 
 <script>
-// import ProductItem from '@/components/product/ProductItem'
-import ProductItem from '@/components/product/ProductItemWithBuy'
-import CheckoutPage from '@/components/product/CheckoutPage'
+import Products from '@/components/product/Products'
+import CheckoutContainer from '@/components/product/CheckoutContainer'
+import AdditionalProductsContainer from '@/components/product/AdditionalProductsContainer'
 
 export default {
   name: 'ProductPage',
-  data () {
-    return {
-      groceryList: [
-        {id: 0, text: 'Vegetables'},
-        {id: 1, text: 'Cheese'},
-        {id: 2, text: 'Mushroom'}
-      ]
-    }
-  },
   methods: {
-    onBuyButtonClick (data) {
-      console.log('from tag product item=' + data)
-    },
-    onBuyButtonClick2 (data) {
-      console.log('from tag checkout=' + data)
-    }
-
   },
   components: {
-    ProductItem, CheckoutPage
+    Products, CheckoutContainer, AdditionalProductsContainer
   }
 }
 </script>
